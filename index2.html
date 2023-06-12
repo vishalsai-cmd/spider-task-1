@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div id="board">
+            </div>
+            <label>select image:</label>
+            <input type="text" id="image">
+            <button id="open">save</button>
+            <p id="output"></p>
+            <!-- <img src="{inputvalue.value}"> -->
+            <script>
+                /* function addimage(){
+
+                    let inputvalue=document.getElementById("image").value;
+                    document.getElementById("output").innerHTML=inputvalue;
+                } */
+                let inputvalue=document.querySelector("#image");
+                let button=document.querySelector("#open")
+                let board=document.getElementById("board");
+                button.addEventListener("click",() =>{
+                    window.open(inputvalue.value)
+                })
+
+            </script>
+            <!-- <script src="script.js"></script> -->
+        </body>
+        </html>
+    </head>
+</html>
